@@ -1,0 +1,29 @@
+[200~  84  curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo tee   /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+   85  echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]   https://pkg.jenkins.io/debian-stable binary/ | sudo tee   /etc/apt/sources.list.d/jenkins.list > /dev/null
+   86  apt-get update
+   87  apt-get install jenkins
+   88  java --version
+   89  apt install default-jre
+   90  apt-get install jenkins
+   91  apt install ca-certificates
+   92  apt-get install jenkins
+   93  apt-get update
+   94  apt-get install jenkins
+   95  wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | apt-key add -
+   96  apt-get install jenkins
+   97  apt-get install jenkins --fix-missing
+   98  wget htttp://mirrors.jenkins.io/debian-stable/jenkins_2.332.3_all.deb
+   99  wget http://mirrors.jenkins.io/debian-stable/jenkins_2.332.3_all.deb
+  100  ls -lrt
+  101  dpkg -i jenkins_2.332.3_all.deb 
+  102  systemctl status jenkins
+  103  cat /var/lib/jenkins/secrets/initialAdminPassword
+  104  cd /var/lib/
+  105  ls -lrt
+  106  cd jenkins/
+  107  ls -lrt
+  108  cat config.xml 
+  109  ls -lrt
+  110  ls -lrt /etc/default/jenkins 
+  111  cat /etc/default/jenkins 
+  112  systemctl stop jenkins
